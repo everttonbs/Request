@@ -12,13 +12,13 @@ class Meme:
         else:
             return response.status_code
 
-    def show_meme(self):
-        data = self.request_api()    
-        print(data['data']['memes'])
+    def show_list_meme(self):
+        data = self.request_api()           
+
+        for meme_name in data['data']['memes']:
+            print(meme_name['name'])
 
 
 meme = Meme()
-meme.show_meme()
-
-
+meme.show_list_meme()
 
