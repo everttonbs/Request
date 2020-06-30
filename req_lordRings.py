@@ -33,7 +33,7 @@ class Lord:
 
     def show_list_caracter(self):
         data = self.request_api()        
-        print(data.keys())
+        print(data.keys()) #mostra as chaves do dicionário
 
         for x in data['docs']:
             print(x['name'], x['race'])
