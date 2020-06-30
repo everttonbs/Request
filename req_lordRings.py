@@ -13,7 +13,7 @@ class Lord:
 
     # Precisa de autenticação
     def request_api(self):
-        endpoint = 'character'
+        endpoint = 'character' # movie - quote - chapter
         api_token = 'xxxxxxx'
         api_url_base = f'https://the-one-api.herokuapp.com/v1/{endpoint}'
         
